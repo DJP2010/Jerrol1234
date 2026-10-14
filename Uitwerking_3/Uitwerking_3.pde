@@ -1,7 +1,7 @@
 float ballX = 200;   
-float ballY = -50;   
+float ballY = 50;   
 float diameter = 50;
-float speedY = 4;    
+float speed = 2.5;    
 
 void setup() {
   size(400, 400);
@@ -10,7 +10,7 @@ void setup() {
 void draw() {
   background(255, 255, 255);
 
-  ballY = ballY + speedY;
+  ballY = ballY + speed;
 
   circle(ballX, ballY, diameter);
 
