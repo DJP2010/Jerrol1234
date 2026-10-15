@@ -21,19 +21,16 @@ void draw() {
   fill(0); 
   circle(ballX, ballY, diameter);
 
-  
   float paddleX = mouseX - (paddleWidth / 2);
   float paddleY = height - 30;
   
   fill(0); 
   rect(paddleX, paddleY, paddleWidth, paddleHeight);
 
-  
   fill(0); 
   textSize(20);
   text("Score: " + score, 20, 30);
 
-  
   if (ballX >= paddleX && ballX <= paddleX + paddleWidth && ballY + (diameter / 2) >= paddleY) {
     score = score + 1;      
     ballY = -diameter;      
